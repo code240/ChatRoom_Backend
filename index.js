@@ -4,7 +4,7 @@ const mysql = require("mysql");
 const bodyParser = require("body-parser");
 const UserCode = require("./Functions/UniqueCodeGenerator");
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
 const MY_API_KEY = "O13EINLKWOI876WPCJ5SPE";
 
 const db = mysql.createPool({
