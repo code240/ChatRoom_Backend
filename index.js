@@ -25,7 +25,7 @@ const MY_API_KEY = "O13EINLKWOI876WPCJ5SPE";
 // })
 
 const db = mysql.createPool({
-    host:"35.156.205.38",
+    host:"148.72.177.16",
     user:"vipinraot_user_for_chatroom",
     password:"3Id.2Ok4DMXf",
     database:"vipinraot_chatroom",
