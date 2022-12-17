@@ -8,13 +8,13 @@ const port = process.env.PORT || 8000;
 // const port = 8000;
 const MY_API_KEY = "O13EINLKWOI876WPCJ5SPE";
 
-// const db = mysql.createPool({
-//     host:"bb2doe9xh3zz03e0efvz-mysql.services.clever-cloud.com",
-//     user:"uq0hq0rfattx9huy",
-//     password:"rFBOCbaWmLUqL3Am7NHz",
-//     database:"bb2doe9xh3zz03e0efvz",
-//     charset: 'utf8mb4'
-// })
+const db = mysql.createPool({
+    host:"bb2doe9xh3zz03e0efvz-mysql.services.clever-cloud.com",
+    user:"uq0hq0rfattx9huy",
+    password:"rFBOCbaWmLUqL3Am7NHz",
+    database:"bb2doe9xh3zz03e0efvz",
+    charset: 'utf8mb4'
+})
 
 // const db = mysql.createPool({
 //     host:"localhost",
@@ -24,13 +24,13 @@ const MY_API_KEY = "O13EINLKWOI876WPCJ5SPE";
 //     charset: 'utf8mb4'
 // })
 
-const db = mysql.createPool({
-    host:"52.28.222.240",
-    user:"vipinraot_user_for_chatroom",
-    password:"3Id.2Ok4DMXf",
-    database:"vipinraot_chatroom",
-    charset: 'utf8mb4'
-})
+// const db = mysql.createPool({
+//     host:"52.28.222.240",
+//     user:"vipinraot_user_for_chatroom",
+//     password:"3Id.2Ok4DMXf",
+//     database:"vipinraot_chatroom",
+//     charset: 'utf8mb4'
+// })
 
 app.use(cors());
 app.use(express.json());
